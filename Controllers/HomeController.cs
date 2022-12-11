@@ -83,6 +83,18 @@ public class HomeController : Controller
     public IActionResult DetailsForCheckout(){
         return View();
     }
+
+    public IActionResult Categories(){
+        return Redirect(Url.Action("Index", "Home")+"#category");
+    }
+
+    public IActionResult Promotions(){
+        return Redirect(Url.Action("Index", "Home")+"#BestPromotions");
+    }
+
+    public IActionResult App(){
+        return Redirect(Url.Action("Index", "Home")+"#download-app");
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

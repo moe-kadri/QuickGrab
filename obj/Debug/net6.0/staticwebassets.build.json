@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wRy9RiB9KZGHb/FrizlaBC2kG3CDZOeG0FU95XWvn8Y=",
+  "Hash": "oUZ9UmqXhoEve/SPPnmxQSDS8CxdpIv2MLmRWcrELXw=",
   "Source": "278Project",
   "BasePath": "_content/278Project",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\AboutUs.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nour Obeid\\Desktop\\QuickGrab\\wwwroot\\css\\Details For Checkout CSS.css",
+      "SourceId": "278Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nour Obeid\\Desktop\\QuickGrab\\wwwroot\\",
+      "BasePath": "_content/278Project",
+      "RelativePath": "css/Details For Checkout CSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Details For Checkout CSS.css"
     },
     {
       "Identity": "C:\\Users\\Nour Obeid\\Desktop\\QuickGrab\\wwwroot\\css\\Home Page CSS.css",
@@ -1273,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\woodenbakery1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Nour Obeid\\Desktop\\QuickGrab\\wwwroot\\js\\Details For Checkout JS.js",
+      "SourceId": "278Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nour Obeid\\Desktop\\QuickGrab\\wwwroot\\",
+      "BasePath": "_content/278Project",
+      "RelativePath": "js/Details For Checkout JS.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Details For Checkout JS.js"
     },
     {
       "Identity": "C:\\Users\\Nour Obeid\\Desktop\\QuickGrab\\wwwroot\\js\\Home Page JS.js",

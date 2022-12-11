@@ -4,15 +4,8 @@
     font-family: 'Poppins',sans-serif;
 }
 
-body {
-    height: 100vh;
-    width: 80vw;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
+
+
 
 .sec {
     background: #74d88b;
@@ -301,17 +294,4 @@ form a {
     transition: 0.3s all ease-in-out;
 }
 
-.fa-facebook-f:hover {
-    color: #a09999;
-    transition: 0.3s all ease-in;
-}
 
-.fa-google-plus-g:hover {
-    color: #a09999;
-    transition: 0.3s all ease-in;
-}
-
-.fa-linkedin-in:hover {
-    color: #a09999;
-    transition: 0.3s all ease-in;
-}

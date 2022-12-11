@@ -1,9 +1,7 @@
 @{
     ViewData["Title"] = "Beauty Products";
 }
-@{
-    Layout = null;
-}
+
 <!DOCTYPE html>
 
 <html>
@@ -18,17 +16,14 @@
 
 <environment names="Development">
     <link rel="stylesheet" href="~/css/ProductPage.css" />
+    <link rel="stylesheet" href="~/css/Home Page CSS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </environment>
 
 <body>
 
     <section id="popular-product">
-        <!--logo-------->
-        <div class="totalLogo">
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="logo">
-                <span>Quick</span><br />Grab
-            </a>
-        </div>
+        
         <!--heading----------->
         <div class="product-heading">
             <h2 class='fruits-heading'>Beauty Products</h2>
