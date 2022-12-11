@@ -294,4 +294,7 @@ form a {
     transition: 0.3s all ease-in-out;
 }
 
-
+.imp {
+    position: relative;
+    height: 750px;
+}

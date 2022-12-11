@@ -1,0 +1,569 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\278Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\278Project.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\AboutUs.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Details For Checkout CSS.css",
+      "PackagePath": "staticwebassets\\css\\Details For Checkout CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Home Page CSS.css",
+      "PackagePath": "staticwebassets\\css\\Home Page CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Login And Registration CSS.css",
+      "PackagePath": "staticwebassets\\css\\Login And Registration CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Payment CSS.css",
+      "PackagePath": "staticwebassets\\css\\Payment CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Payment Confirmation CSS.css",
+      "PackagePath": "staticwebassets\\css\\Payment Confirmation CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\ProductPage.css",
+      "PackagePath": "staticwebassets\\css\\ProductPage.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Profile CSS.css",
+      "PackagePath": "staticwebassets\\css\\Profile CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Shopping Cart CSS.css",
+      "PackagePath": "staticwebassets\\css\\Shopping Cart CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\Wishlist CSS.css",
+      "PackagePath": "staticwebassets\\css\\Wishlist CSS.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Baby Cream.jpg",
+      "PackagePath": "staticwebassets\\images\\Baby Cream.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Baby Powder.jpg",
+      "PackagePath": "staticwebassets\\images\\Baby Powder.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Baby Shampoo.jpg",
+      "PackagePath": "staticwebassets\\images\\Baby Shampoo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Baby Wipes.jpg",
+      "PackagePath": "staticwebassets\\images\\Baby Wipes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Beard Oil.jpg",
+      "PackagePath": "staticwebassets\\images\\Beard Oil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Diapers.jpg",
+      "PackagePath": "staticwebassets\\images\\Diapers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Face Cream.jpg",
+      "PackagePath": "staticwebassets\\images\\Face Cream.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Gloves.jpg",
+      "PackagePath": "staticwebassets\\images\\Gloves.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Johnson's Baby Oil.jpg",
+      "PackagePath": "staticwebassets\\images\\Johnson's Baby Oil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Lakme Facewash.jpg",
+      "PackagePath": "staticwebassets\\images\\Lakme Facewash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Lip Balm.jpg",
+      "PackagePath": "staticwebassets\\images\\Lip Balm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Men's Face Wash.jpg",
+      "PackagePath": "staticwebassets\\images\\Men's Face Wash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Moisturizer.jpg",
+      "PackagePath": "staticwebassets\\images\\Moisturizer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Oranges.jpg",
+      "PackagePath": "staticwebassets\\images\\Oranges.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Pencils.jpg",
+      "PackagePath": "staticwebassets\\images\\Pencils.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Pens.jpg",
+      "PackagePath": "staticwebassets\\images\\Pens.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Pins.jpg",
+      "PackagePath": "staticwebassets\\images\\Pins.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Puncher.jpg",
+      "PackagePath": "staticwebassets\\images\\Puncher.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Stapler.jpg",
+      "PackagePath": "staticwebassets\\images\\Stapler.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Sticky Notes.jpg",
+      "PackagePath": "staticwebassets\\images\\Sticky Notes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\Watering Can.jpg",
+      "PackagePath": "staticwebassets\\images\\Watering Can.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\app.jpg",
+      "PackagePath": "staticwebassets\\images\\app.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\aquafina-01.jpg",
+      "PackagePath": "staticwebassets\\images\\aquafina-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\bihar.jpg",
+      "PackagePath": "staticwebassets\\images\\bihar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\california.jpg",
+      "PackagePath": "staticwebassets\\images\\california.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\chip.png",
+      "PackagePath": "staticwebassets\\images\\chip.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\food.jpg",
+      "PackagePath": "staticwebassets\\images\\food.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\hersheys.jpg",
+      "PackagePath": "staticwebassets\\images\\hersheys.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\Gardening.png",
+      "PackagePath": "staticwebassets\\images\\images\\Gardening.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\Vegetables.png",
+      "PackagePath": "staticwebassets\\images\\images\\Vegetables.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\apple.png",
+      "PackagePath": "staticwebassets\\images\\images\\apple.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\appstore-btn.png",
+      "PackagePath": "staticwebassets\\images\\images\\appstore-btn.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\baby.png",
+      "PackagePath": "staticwebassets\\images\\images\\baby.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\beauty.png",
+      "PackagePath": "staticwebassets\\images\\images\\beauty.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\bg-1.png",
+      "PackagePath": "staticwebassets\\images\\images\\bg-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\bg-2.png",
+      "PackagePath": "staticwebassets\\images\\images\\bg-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\bg.png",
+      "PackagePath": "staticwebassets\\images\\images\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\chili.png",
+      "PackagePath": "staticwebassets\\images\\images\\chili.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\client-1.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\client-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\client-2.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\client-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\client-3.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\client-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\garlic.png",
+      "PackagePath": "staticwebassets\\images\\images\\garlic.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\googleplay-btn.png",
+      "PackagePath": "staticwebassets\\images\\images\\googleplay-btn.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\mobile-app.png",
+      "PackagePath": "staticwebassets\\images\\images\\mobile-app.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\office.png",
+      "PackagePath": "staticwebassets\\images\\images\\office.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\onion.png",
+      "PackagePath": "staticwebassets\\images\\images\\onion.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\pack1.png",
+      "PackagePath": "staticwebassets\\images\\images\\pack1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\pack2.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\pack2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\pack3.png",
+      "PackagePath": "staticwebassets\\images\\images\\pack3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\patato.png",
+      "PackagePath": "staticwebassets\\images\\images\\patato.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\tamato.png",
+      "PackagePath": "staticwebassets\\images\\images\\tamato.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\images\\vegetables.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\vegetables.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\lotus.jpg",
+      "PackagePath": "staticwebassets\\images\\lotus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\manure.jpg",
+      "PackagePath": "staticwebassets\\images\\manure.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\nutella.jpg",
+      "PackagePath": "staticwebassets\\images\\nutella.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\pepsi.png",
+      "PackagePath": "staticwebassets\\images\\pepsi.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\picon.jpg",
+      "PackagePath": "staticwebassets\\images\\picon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\puck.jpg",
+      "PackagePath": "staticwebassets\\images\\puck.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\quickGrab.JPG",
+      "PackagePath": "staticwebassets\\images\\quickGrab.JPG"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\visa.png",
+      "PackagePath": "staticwebassets\\images\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\images\\woodenbakery1.jpg",
+      "PackagePath": "staticwebassets\\images\\woodenbakery1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\js\\Details For Checkout JS.js",
+      "PackagePath": "staticwebassets\\js\\Details For Checkout JS.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\js\\Home Page JS.js",
+      "PackagePath": "staticwebassets\\js\\Home Page JS.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\js\\Login And Registration JS.js",
+      "PackagePath": "staticwebassets\\js\\Login And Registration JS.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\js\\Payment JS.js",
+      "PackagePath": "staticwebassets\\js\\Payment JS.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\js\\Profile JS.js",
+      "PackagePath": "staticwebassets\\js\\Profile JS.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - American University of Beirut\\Desktop\\Fall 2022\\CMPS 278\\Web-Dev-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.278Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.278Project.props",
+      "PackagePath": "build\\278Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.278Project.props",
+      "PackagePath": "buildMultiTargeting\\278Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.278Project.props",
+      "PackagePath": "buildTransitive\\278Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
