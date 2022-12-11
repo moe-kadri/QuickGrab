@@ -1,0 +1,131 @@
+@{
+    ViewData["Title"] = "Food Products";
+}
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+
+<title>
+
+    Food Products
+
+</title>
+
+<script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/css/ProductPage.css" />
+</environment>
+
+<body>
+
+    <section id="popular-product">
+        <!--logo-------->
+        <div class="totalLogo">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="logo">
+                <span>Quick</span><br />Grab
+            </a>
+        </div>
+        <!--heading----------->
+        <div class="product-heading">
+            <h2 class='fruits-heading'>Food Products</h2>
+        </div>
+        <!--box-container------>
+        <div class="product-container">
+            <!--box---------->
+            <div class="product-box">
+                <img alt="Cetirizine" src="~/images/picon.jpg">
+                <strong>Picon Cheese</strong>
+                <span class="quantity">8 Portions</span>
+                <span class="price">LBP 28,500</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn" style='text-decoration: none;'>
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="CUFRIL-D Cough Syrup" src="~/images/puck.jpg">
+                <strong>Puck Creamy</strong>
+                <span class="quantity"></span>
+                <span class="price">LBP 110,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn" style='text-decoration: none;'>
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="Cheston Cold" src="~/images/bihar.jpg">
+                <strong>Bihar Mozzarella </strong>
+                <span class="quantity">1 Kg</span>
+                <span class="price">LBP 175,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn" style='text-decoration: none;'>
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="Dolo 650" src="~/images/hersheys.jpg">
+                <strong>Hersheys Spread</strong>
+                <span class="price">LBP 120,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn" style='text-decoration: none;'>
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="Metolar XR 50" src="~/images/nutella.jpg">
+                <strong>Nutella Spread</strong>
+                <span class="price">LBP 98,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn" style='text-decoration: none;'>
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="Gelusil Tablets" src="~/images/lotus.jpg">
+                <strong>Lotus Biscoff</strong>
+                <span class="quantity">380g</span>
+                <span class="price">LBP 77,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn" style='text-decoration: none;'>
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

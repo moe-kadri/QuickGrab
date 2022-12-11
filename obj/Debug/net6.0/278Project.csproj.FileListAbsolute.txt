@@ -1,0 +1,52 @@
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\appsettings.json
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\278Project.staticwebassets.runtime.json
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\278Project.exe
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\278Project.deps.json
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\278Project.runtimeconfig.json
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\278Project.dll
+C:\Users\user\Desktop\278Project\bin\Debug\net6.0\278Project.pdb
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.AssemblyInfo.cs
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\scopedcss\bundle\278Project.styles.css
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\scopedcss\projectbundle\278Project.bundle.scp.css
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.dll
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\refint\278Project.dll
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.pdb
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\278Project.genruntimeconfig.cache
+C:\Users\user\Desktop\278Project\obj\Debug\net6.0\ref\278Project.dll
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\appsettings.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\278Project.staticwebassets.runtime.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\278Project.exe
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\278Project.deps.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\278Project.runtimeconfig.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\278Project.dll
+C:\Users\Nour Obeid\Desktop\QuickGrab\bin\Debug\net6.0\278Project.pdb
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.csproj.AssemblyReference.cache
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.AssemblyInfoInputs.cache
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.AssemblyInfo.cs
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.csproj.CoreCompileInputs.cache
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.RazorAssemblyInfo.cache
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.RazorAssemblyInfo.cs
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\scopedcss\bundle\278Project.styles.css
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\scopedcss\projectbundle\278Project.bundle.scp.css
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.dll
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\refint\278Project.dll
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.pdb
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\278Project.genruntimeconfig.cache
+C:\Users\Nour Obeid\Desktop\QuickGrab\obj\Debug\net6.0\ref\278Project.dll

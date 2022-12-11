@@ -1,0 +1,469 @@
+﻿@{
+    ViewData["Title"] = "QuickGrab Market";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--==Stylesheet=============================-->
+    <environment><link rel="stylesheet" type="text/css" href="~/css/Home Page CSS.css"></environment>
+
+    
+
+
+    <!--==Using-Font-Awesome=====================-->
+    <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+
+    <script src='~/js/Home Page JS.js' defer></script>
+
+</head>
+
+<body>
+    <!--==Search-banner=======================================-->
+    <section id="search-banner">
+
+        <!--bg--------->
+        <img alt="bg" class="bg-1" src="~/images/images/bg-1.png">
+
+        <img alt="bg" class="bg-1_rev" src="~/images/images/bg-1.png">
+
+        <img alt="bg-2" class="bg-2" src="~/images/images/bg-2.png">
+
+        <!--text------->
+        <div class="search-banner-text">
+
+            <h1>
+
+                Order Your daily Groceries
+
+            </h1>
+
+            <strong>
+
+                #Free Delivery
+
+            </strong>
+
+            <!--search-box------>
+            <form action="" class="search-box">
+
+                <!--icon------>
+                <i class="fa fa-search"></i>
+
+                <!--input----->
+                <input type="text" class="search-input" placeholder="Search" name="search" size="80px" required>
+
+                <!--btn------->
+                <input type="submit" class="search-btn" value="Search">
+
+            </form>
+
+            <br>
+
+            <h3>
+
+                <a href='#BestPromotions' style='color: #40aa54'>
+
+                    Click here to check today's promotions
+
+                </a>
+
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!--search-banner-end--------------->
+
+    <!--==category=========================================-->
+    <section id="category">
+
+        <!--heading---------------->
+        <div class="category-heading">
+
+            <h2>
+
+                Categories
+
+            </h2>
+
+        </div>
+
+        <!--box-container---------->
+        <div class="category-container">
+
+            <!--box---------------->
+            <a class="category-box" asp-area="" asp-controller="Home" asp-action="FruitesAndVeggies">
+                <img alt="Fruits and Vegetables" src="~/images/images/Vegetables.png">
+                <span>Fruits & <br> Vegetables</span>
+            </a>
+            <!--box---------------->
+            <a class="category-box" asp-area="" asp-controller="Home" asp-action="Food">
+                <img alt="Food Products" src="~/images/food.jpg">
+                <span>Food Products</span>
+            </a>
+            <!--box---------------->
+            <a class="category-box" asp-area="" asp-controller="Home" asp-action="BabyCare">
+                <img alt="Baby Care Products" src="~/images/images/baby.png">
+                <span>Baby Care</span>
+            </a>
+            <!--box---------------->
+            <a class="category-box" asp-area="" asp-controller="Home" asp-action="Office">
+                <img alt="Fish" src="~/images/images/office.png">
+                <span>Stationary</span>
+            </a>
+            <!--box---------------->
+            <a class="category-box" asp-area="" asp-controller="Home" asp-action="Beauty">
+                <img alt="Beauty Products" src="~/images/images/beauty.png">
+                <span>Beauty</span>
+            </a>
+            <!--box---------------->
+            <a class="category-box" asp-area="" asp-controller="Home" asp-action="Gardening">
+                <img alt="Gardening Products" src="~/images/images/Gardening.png">
+                <span>Gardening</span>
+            </a>
+        </div>
+
+    </section>
+    <!--category-end----------------------------------->
+    <!--==Products====================================-->
+    <section id="popular-product">
+        <!--heading----------->
+        <div class="product-heading">
+            <h3>Our Best Sellers</h3>
+            <a asp-area="" asp-controller="Home" asp-action="BestSellers"><span>All</span></a>
+        </div>
+        <!--box-container------>
+        <div class="product-container">
+            <!--box---------->
+            <div class="product-box">
+                <img alt="apple" src="~/images/images/apple.png">
+                <strong>Apple</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">LBP 60,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="chili" src="~/images/images/chili.png">
+                <strong>Chili</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">LBP 45,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="onion" src="~/images/images/onion.png">
+                <strong>Onion</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">LBP 34,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="potato" src="~/images/images/patato.png">
+                <strong>Potato</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">LBP 50,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="garlic" src="~/images/images/garlic.png">
+                <strong>Garlic</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">LBP 42,000</span>
+                <!--cart-btn------->
+                <a href="#" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="tomato" src="~/images/images/tamato.png">
+                <strong>Tomato</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">LBP 30,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--popular-product-end--------------------->
+    <!--Popular-bundle-pack===================================-->
+    <section id="popular-bundle-pack">
+        <!--heading-------------->
+        <div class="product-heading">
+            <h3 id="BestPromotions">Promotions</h3>
+        </div>
+        <!--box-container------>
+        <div class="product-container">
+            <!--box---------->
+            <div class="product-box">
+                <img alt="pack" src="~/images/images/pack1.png">
+                <strong>Big Pack</strong>
+                <span class="quantity">Lemon, Tomato, Potato,+4</span>
+                <span class="price">LBP 196,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="apple" src="~/images/images/pack2.jpg">
+                <strong>Large Pack</strong>
+                <span class="quantity">Lemon, Tomato, Potato,+2</span>
+                <span class="price">LBP 154,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="apple" src="~/images/images/pack3.png">
+                <strong>Small Pack</strong>
+                <span class="quantity">Lemon, Tomato, Potato</span>
+                <span class="price">LBP 129,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="pack" src="~/images/picon.jpg">
+                <strong>Picon Offer</strong>
+                <span class="quantity">4 x 8 Portions</span>
+                <span class="price">LBP 65,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="apple" src="~/images/bihar.jpg">
+                <strong>Mozarella</strong>
+                <span class="quantity">2 Kg</span>
+                <span class="price">LBP 314,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+            <!--box---------->
+            <div class="product-box">
+                <img alt="apple" src="~/images/lotus.jpg">
+                <strong>Lotus Spread</strong>
+                <span class="quantity">380g</span>
+                <span class="price">LBP 39,000</span>
+                <!--cart-btn------->
+                <a href="Shopping Cart HTML.html" class="cart-btn">
+                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                </a>
+                <!--like-btn------->
+                <a class="like-btn">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--popular-bundle-pack-end-------------------------------->
+
+    <!--==Partnre-logo================================-->
+    <section id="partner">
+        <!--heading------------>
+        <div class="partner-heading">
+            <h3>Our Trusted Partner</h3>
+        </div>
+        <!--logo-container----->
+        <div class="logo-container">
+            <img alt="logo" src="~/images/aquafina-01.jpg">
+            <img alt="logo" src="~/images/woodenbakery1.jpg">
+            <img alt="logo" src="~/images/pepsi.png">
+            <img alt="logo" src="~/images/california.jpg">
+        </div>
+    </section>
+    <!--logo-section-end--------------------->
+    <!--==Clients===============================================-->
+    <section id="clients">
+        <!--heading---------------->
+        <div class="client-heading">
+            <h3>What Our Clients Say</h3>
+        </div>
+        <!--box-container---------->
+        <div class="client-box-container">
+            <!--box------------->
+            <div class="client-box">
+                <!--==profile===-->
+                <div class="client-profile">
+                    <!--img--->
+                    <img alt="client" src="~/images/images/client-1.jpg">
+                    <!--text-->
+                    <div class="profile-text">
+                        <strong>James Blind</strong>
+                        <span>CEO</span>
+                    </div>
+                </div>
+                <!--==Rating======-->
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <!--==comments===-->
+                <p>QuickGrab Store is the best. It never fails to dissapoint me. Grocery shopping has become so easy
+                    with
+                    QuickGrab Store.</Str>
+                </p>
+            </div>
+            <!--box------------->
+            <div class="client-box">
+                <!--==profile===-->
+                <div class="client-profile">
+                    <!--img--->
+                    <img alt="client" src="~/images/images/client-2.jpg">
+                    <!--text-->
+                    <div class="profile-text">
+                        <strong>Sameer Shamaa</strong>
+                        <span>Software Developer</span>
+                    </div>
+                </div>
+                <!--==Rating======-->
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <!--==comments===-->
+                <p>QuickGrab Store is just amazing. I can buy all my groceries from a single place. The groceries
+                    are
+                    available at very affordable prices. And, the groceries are delivered at the time slot you
+                    choose and
+                    prefer.</p>
+            </div>
+            <!--box------------->
+            <div class="client-box">
+                <!--==profile===-->
+                <div class="client-profile">
+                    <!--img--->
+                    <img alt="client" src="~/images/images/client-3.jpg">
+                    <!--text-->
+                    <div class="profile-text">
+                        <strong>Cynthia Noel</strong>
+                        <span>Marketer</span>
+                    </div>
+                </div>
+                <!--==Rating======-->
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <!--==comments===-->
+                <p>At QuickGrab Store, you can get fresh fruits and vegetables. And it is not only about fruits or
+                    vegetables, you can buy all kinds of stuff here.</p>
+            </div>
+        </div>
+    </section>
+    <!--client-section-end---------->
+    <!--==download-app====================================-->
+    <section id="download-app">
+        <!--img----------------------->
+        <div class="app-img">
+            <img alt="app" src="~/images/app.jpg">
+        </div>
+        <!--text---------------------->
+        <div class="download-app-text">
+            <strong>Download App</strong>
+            <p>Grocery shopping made easier. Now, you don't need to open the website for placing orders. Download
+                the <b>QuickGrab Store</b> app from Play Store and App Store to start shopping easily and faster.
+                <br> HAPPY SHOPPING!</b>
+            </p>
+            <!--btns------->
+            <div class="download-btns">
+                <a href="https://www.apple.com/in/app-store/"><img alt="" src="~/images/images/appstore-btn.png"></a>
+                <a href="https://play.google.com/store"><img alt="" src="~/images/images/googleplay-btn.png"></a>
+            </div>
+        </div>
+    </section>
+    <!--download-app-section-end------------------------->
+</body>
+
+</html>
