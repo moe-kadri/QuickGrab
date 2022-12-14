@@ -1,16 +1,18 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using _278Project.Models;
+using _278Project.Repos;
 
 namespace _278Project.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IUsersRepo _usersRepo;
+
+    public HomeController(IUsersRepo usersRepo)
     {
-        _logger = logger;
+        _usersRepo = usersRepo;
     }
 
     public IActionResult Index()
@@ -21,30 +23,37 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult BabyCare()
-    {
-        return View();
-    }
-    public IActionResult Beauty()
-    {
-        return View();
-    }
-    public IActionResult Food()
-    {
-        return View();
-    }
-    public IActionResult FruitesAndVeggies()
-    {
-        return View();
-    }
-    public IActionResult Gardening()
-    {
-        return View();
-    }
-    public IActionResult Office()
-    {
-        return View();
-    }
+    // public IActionResult BabyCare()
+    // {
+    //     var products = _usersRepo.getProducts();
+    //     return View(products);
+    // }
+    // public IActionResult Beauty()
+    // {
+    //     var products = _usersRepo.getProducts();
+    //     return View(products);
+    // }
+
+    // public IActionResult Food()
+    // {
+    //     var products = _usersRepo.getProducts();
+    //     return View(products);
+    // }
+    // public IActionResult FruitesAndVeggies()
+    // {
+    //     var products = _usersRepo.getProducts();
+    //     return View(products);
+    // }
+    // public IActionResult Gardening()
+    // {
+    //     var products = _usersRepo.getProducts();
+    //     return View(products);
+    // }
+    // public IActionResult Office()
+    // {
+    //     var products = _usersRepo.getProducts();
+    //     return View(products);
+    // }
     public IActionResult NewArrivals()
     {
         return View();
@@ -54,46 +63,57 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult BestDeals(){
+    public IActionResult BestDeals()
+    {
         return View();
     }
-    public IActionResult LogReg(){
+    public IActionResult LogReg()
+    {
         return View();
     }
-    public IActionResult ShoppingCart(){
-        return View();
-    }
-
-    public IActionResult Payment(){
-        return View();
-    }
-
-    public IActionResult PaymentConfirmation(){
-        return View();
-    }
-    
-    public IActionResult Profile(){
+    public IActionResult ShoppingCart()
+    {
         return View();
     }
 
-    public IActionResult WishList(){
+    public IActionResult Payment()
+    {
         return View();
     }
 
-    public IActionResult DetailsForCheckout(){
+    public IActionResult PaymentConfirmation()
+    {
         return View();
     }
 
-    public IActionResult Categories(){
-        return Redirect(Url.Action("Index", "Home")+"#category");
+    public IActionResult Profile()
+    {
+        return View();
     }
 
-    public IActionResult Promotions(){
-        return Redirect(Url.Action("Index", "Home")+"#BestPromotions");
+    public IActionResult WishList()
+    {
+        return View();
     }
 
-    public IActionResult App(){
-        return Redirect(Url.Action("Index", "Home")+"#download-app");
+    public IActionResult DetailsForCheckout()
+    {
+        return View();
+    }
+
+    public IActionResult Categories()
+    {
+        return Redirect(Url.Action("Index", "Home") + "#category");
+    }
+
+    public IActionResult Promotions()
+    {
+        return Redirect(Url.Action("Index", "Home") + "#BestPromotions");
+    }
+
+    public IActionResult App()
+    {
+        return Redirect(Url.Action("Index", "Home") + "#download-app");
     }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

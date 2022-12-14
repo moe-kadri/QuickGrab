@@ -1,12 +1,20 @@
 using _278Project.Data;
 using Microsoft.EntityFrameworkCore;
+using _278Project.Repos;
+using _278Project.Models;
+using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(
-    options =>options.UseSqlite(builder.Configuration.GetConnectionString("Sqlite")));
+    options => options.UseSqlite(builder.Configuration.GetConnectionString("Sqlite")));
 
+builder.Services.AddIdentity<User, IdentityRole>()
+.AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IUsersRepo, UsersRepo>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,6 +30,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

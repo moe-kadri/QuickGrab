@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Product>
+@{
     ViewData["Title"] = "QuickGrab Market";
 }
 
@@ -15,9 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--==Stylesheet=============================-->
-    <environment><link rel="stylesheet" type="text/css" href="~/css/Home Page CSS.css"></environment>
+    <environment>
+        <link rel="stylesheet" type="text/css" href="~/css/Home Page CSS.css">
+    </environment>
 
-    
+
 
 
     <!--==Using-Font-Awesome=====================-->
@@ -47,7 +50,7 @@
 
             </h1>
 
-          
+
 
             <!--search-box------>
             <form action="" class="search-box">
@@ -141,96 +144,124 @@
         </div>
         <!--box-container------>
         <div class="product-container">
+            @{
+                var counter = 0;
+            }
+            @foreach (var product in Model)
+            {
+                @if (@product.is_best_seller == true)
+                {
+                    <div class="product-box">
+                        <img alt="Cetirizine" src="@product.imgURL">
+                        <strong>@product.name</strong>
+                        <span class="quantity">@product.quantity</span>
+                        <span class="price">@product.price</span>
+
+                        <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                            <i class="fa fa-shopping-bag"></i> Add to Cart
+                        </a>
+
+                        <a class="like-btn" style='text-decoration: none;'>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </div>
+                    counter++;
+                }
+                @if (counter >= 6)
+                {
+                    break;
+                }
+            }
             <!--box---------->
-            <div class="product-box">
+            @* <div class="product-box">
                 <img alt="apple" src="~/images/images/apple.png">
                 <strong>Apple</strong>
                 <span class="quantity">1 KG</span>
                 <span class="price">LBP 60,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="chili" src="~/images/images/chili.png">
                 <strong>Chili</strong>
                 <span class="quantity">1 KG</span>
                 <span class="price">LBP 45,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="onion" src="~/images/images/onion.png">
                 <strong>Onion</strong>
                 <span class="quantity">1 KG</span>
                 <span class="price">LBP 34,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="potato" src="~/images/images/patato.png">
                 <strong>Potato</strong>
                 <span class="quantity">1 KG</span>
                 <span class="price">LBP 50,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="garlic" src="~/images/images/garlic.png">
                 <strong>Garlic</strong>
                 <span class="quantity">1 KG</span>
                 <span class="price">LBP 42,000</span>
                 <!--cart-btn------->
                 <a href="#" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="tomato" src="~/images/images/tamato.png">
                 <strong>Tomato</strong>
                 <span class="quantity">1 KG</span>
                 <span class="price">LBP 30,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
+                </div> *@
         </div>
     </section>
     <!--popular-product-end--------------------->
@@ -242,96 +273,124 @@
         </div>
         <!--box-container------>
         <div class="product-container">
+            @{
+                var counter1 = 0;
+            }
+            @foreach (var product in Model)
+            {
+                @if (@product.is_promoted == true)
+                {
+                    <div class="product-box">
+                        <img alt="Cetirizine" src="@product.imgURL">
+                        <strong>@product.name</strong>
+                        <span class="quantity">@product.quantity</span>
+                        <span class="price">@product.price</span>
+
+                        <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                            <i class="fa fa-shopping-bag"></i> Add to Cart
+                        </a>
+
+                        <a class="like-btn" style='text-decoration: none;'>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </div>
+                    counter1++;
+                }
+                @if (counter1 >= 6)
+                {
+                    break;
+                }
+            }
             <!--box---------->
-            <div class="product-box">
+            @* <div class="product-box">
                 <img alt="pack" src="~/images/images/pack1.png">
                 <strong>Big Pack</strong>
                 <span class="quantity">Lemon, Tomato, Potato,+4</span>
                 <span class="price">LBP 196,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="apple" src="~/images/images/pack2.jpg">
                 <strong>Large Pack</strong>
                 <span class="quantity">Lemon, Tomato, Potato,+2</span>
                 <span class="price">LBP 154,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="apple" src="~/images/images/pack3.png">
                 <strong>Small Pack</strong>
                 <span class="quantity">Lemon, Tomato, Potato</span>
                 <span class="price">LBP 129,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="pack" src="~/images/picon.jpg">
                 <strong>Picon Offer</strong>
                 <span class="quantity">4 x 8 Portions</span>
                 <span class="price">LBP 65,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="apple" src="~/images/bihar.jpg">
                 <strong>Mozarella</strong>
                 <span class="quantity">2 Kg</span>
                 <span class="price">LBP 314,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="apple" src="~/images/lotus.jpg">
                 <strong>Lotus Spread</strong>
                 <span class="quantity">380g</span>
                 <span class="price">LBP 39,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn">
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn">
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
+                </div> *@
         </div>
     </section>
     <!--popular-bundle-pack-end-------------------------------->

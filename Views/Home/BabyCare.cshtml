@@ -1,3 +1,4 @@
+@model List<Product>
 @{
     ViewData["Title"] = "Baby Care Products";
 }
@@ -30,96 +31,118 @@
         </div>
         <!--box-container------>
         <div class="product-container">
+            @foreach (var product in Model)
+            {
+                @if (@product.category == "babyCare")
+                {
+                    <div class="product-box">
+                        <img alt="Cetirizine" src="@product.imgURL">
+                        <strong>@product.name</strong>
+                        <span class="quantity">@product.quantity</span>
+                        <span class="price">@product.price</span>
+
+                        <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
+                            <i class="fa fa-shopping-bag"></i> Add to Cart
+                        </a>
+
+                        <a class="like-btn" style='text-decoration: none;'>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </div>
+                }
+
+            }
+
             <!--box---------->
-            <div class="product-box">
+            @* <div class="product-box">
                 <img alt="Johnson's Baby Oil" src="~/images/Johnson's Baby Oil.jpg">
                 <strong>Johnson's Baby Oil</strong>
                 <span class="quantity">500 ml</span>
                 <span class="price">LBP 90,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn" style='text-decoration: none;'>
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="Little's Baby Wipes" src="~/images/Baby Wipes.jpg">
                 <strong>Little's Baby Wipes</strong>
                 <span class="quantity">80 Wipes</span>
                 <span class="price">LBP 60,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn" style='text-decoration: none;'>
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="Mama Earth Baby Moisturizer" src="~/images/Baby Cream.jpg">
                 <strong>Mama Earth Baby Moisturizer </strong>
                 <span class="quantity">400 ml</span>
                 <span class="price">LBP 80,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn" style='text-decoration: none;'>
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="imalaya Baby Shampoo" src="~/images/Baby Shampoo.jpg">
                 <strong>Himalaya Baby Shampoo</strong>
                 <span class="quantity">400 ml</span>
                 <span class="price">LBP 55,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn" style='text-decoration: none;'>
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="Johnson's Baby Powder" src="~/images/Baby Powder.jpg">
                 <strong>Johnson's Baby Powder</strong>
                 <span class="quantity">200 g</span>
                 <span class="price">LBP 76,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn" style='text-decoration: none;'>
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
-            <!--box---------->
-            <div class="product-box">
+                </div>
+                <!--box---------->
+                <div class="product-box">
                 <img alt="Pampers Baby Pants" src="~/images/Diapers.jpg">
                 <strong>Pampers Baby Pants</strong>
                 <span class="quantity">58 Pants</span>
                 <span class="price">LBP 135,000</span>
                 <!--cart-btn------->
                 <a href="Shopping Cart HTML.html" class="cart-btn" style='text-decoration: none;'>
-                    <i class="fa fa-shopping-bag"></i> Add to Cart
+                <i class="fa fa-shopping-bag"></i> Add to Cart
                 </a>
                 <!--like-btn------->
                 <a class="like-btn" style='text-decoration: none;'>
-                    <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
                 </a>
-            </div>
+                </div> *@
         </div>
     </section>
 

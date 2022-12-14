@@ -92,15 +92,37 @@
 
                 </li>
 
-                <li>
 
+                @using Microsoft.AspNetCore.Identity
+                @inject SignInManager<User> signInManager
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <li>
+                        <form method="post" asp-action="Logout" asp-controller="Home" asp-area="">
+                            <input type="submit" value="Log Out" class="btn btn-outline-light" />
+                            <span class="text-light">@User.Identity.Name</span>
+                        </form>
+                    </li>
+
+                }
+                else
+                {
+                    // get current action
+                    var action = ViewContext.RouteData.Values["action"]?.ToString();
+                    // anonymous user - Register link and Log In button
+                    <li class="nav-item">
+                        <a asp-action="Register" asp-controller="Account" asp-area="" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="Login" asp-controller="Account" asp-area="" class="btn btn-outline-light">Log In</a>
+                    </li>
                     <a asp-area="" asp-controller="Home" asp-action="LogReg" class="PageOption">
 
-                        Sign&nbsp;in/Sign&nbsp;up
+                        Sign &nbsp;in/ Sign &nbsp; up
 
                     </a>
+                }
 
-                </li>
 
 
 

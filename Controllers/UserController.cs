@@ -2,7 +2,6 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using _278Project.Models;
 using _278Project.Repos;
-using _278Project.Data;
 
 namespace _278Project.Controllers;
 
@@ -12,14 +11,14 @@ public class UserController : Controller
 
     public UserController(IUsersRepo usersRepo)
     {
-        _UsersRepo= usersRepo;
+        _UsersRepo = usersRepo;
     }
 
     public IActionResult Index()
     {
         return View();
     }
-   
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
