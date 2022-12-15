@@ -1,29 +1,67 @@
-using System.Diagnostics;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using _278Project.Models;
 using _278Project.Repos;
-using Microsoft.AspNetCore.Authorization;
 
-namespace _278Project.Controllers;
-[Authorize]
+[Authorize(Roles = "Admin")]
 public class AdminController : Controller
 {
-    private readonly IAdminsRepo _AdminsRepo;
-
+    private readonly IAdminsRepo _adminsRepo;
     public AdminController(IAdminsRepo adminsRepo)
     {
-        _AdminsRepo = adminsRepo;
+        _adminsRepo = adminsRepo;
+    }
+    public IActionResult Index()
+    {
+        var products = _adminsRepo.getProducts();
+        var disp = new ProductViewModel { };
+        disp.Products = products;
+        return View(disp);
     }
 
-    public IActionResult Index()
+    [HttpGet]
+    public IActionResult AddProduct()
     {
         return View();
     }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    [HttpPost]
+    public IActionResult AddProduct(Product product)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        if (ModelState.IsValid)
+        {
+            _adminsRepo.AddProduct(product);
+        }
+        else return View("Error");
+        return RedirectToAction("Index");
     }
-}
+    [HttpGet]
+    public IActionResult Update(Product product)
+    {
+        return View(product);
+    }
+    [HttpPost]
+    public IActionResult Update(int id)
+    {
+        var ProductToUpdate = _adminsRepo.GetProductById(id);
+        if (ProductToUpdate != null)
+        {
+            _adminsRepo.updateProductBestSeller(ProductToUpdate.ProductId, ProductToUpdate.is_best_seller);
+            _adminsRepo.updateProductPromotion(ProductToUpdate.ProductId, ProductToUpdate.is_promoted);
+            _adminsRepo.updateProductPrice(ProductToUpdate.ProductId, ProductToUpdate.price);
+            _adminsRepo.updateProductQuantity(ProductToUpdate.ProductId, ProductToUpdate.quantity);
+        }
+        return RedirectToAction("Index");
+    }
+    [HttpPost]
+    public IActionResult Delete(Product product)
+    {
+        var ProductToDelete = _adminsRepo.GetProductById(product.ProductId);
+        if (ProductToDelete != null) _adminsRepo.RemoveProduct(ProductToDelete);
 
+        return RedirectToAction("Index");
+    }
+
+}

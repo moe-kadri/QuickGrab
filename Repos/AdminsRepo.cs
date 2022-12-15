@@ -58,15 +58,25 @@ public class AdminsRepo : IAdminsRepo
             _context.SaveChanges();
         }
     }
+
+
+    public Product? GetProductById(int id)
+    {
+        return _context.Products.Find(id);
+    }
     public void RemoveOrder(int orderId)
     {
-        // var order = _context.Orders.Find(orderId);
-        // if (order != null)
-        // {
-        //     _context.Orders.Remove(order);
-        //     _context.SaveChanges();
-        // }
+        var order = _context.Orders.Find(orderId);
+        if (order != null)
+        {
+            _context.Orders.Remove(order);
+            _context.SaveChanges();
+        }
 
 
+    }
+    IEnumerable<Product> IAdminsRepo.getProducts()
+    {
+        return _context.Products.OrderBy(p => p.name).ToList();
     }
 }

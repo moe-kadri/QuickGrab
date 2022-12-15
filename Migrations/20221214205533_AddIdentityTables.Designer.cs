@@ -11,13 +11,63 @@ using _278Project.Data;
 namespace _278Project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221213214827_AddIdentityTables")]
+    [Migration("20221214205533_AddIdentityTables")]
     partial class AddIdentityTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.11");
+
+            modelBuilder.Entity("_278Project.Models.Cart", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id", "ProductId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("_278Project.Models.Order", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("cardName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("cardNbr")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("cvv")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("expiryMonth")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("expiryYear")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("userName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("OrderId");
+
+                    b.ToTable("Orders");
+                });
 
             modelBuilder.Entity("_278Project.Models.Product", b =>
                 {
@@ -40,8 +90,8 @@ namespace _278Project.Migrations
                     b.Property<string>("name")
                         .HasColumnType("TEXT");
 
-                    b.Property<float>("price")
-                        .HasColumnType("REAL");
+                    b.Property<int>("price")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("quantity")
                         .HasColumnType("INTEGER");
@@ -116,6 +166,24 @@ namespace _278Project.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("_278Project.Models.WishList", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id", "ProductId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("WishLists");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -246,6 +314,44 @@ namespace _278Project.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("_278Project.Models.Cart", b =>
+                {
+                    b.HasOne("_278Project.Models.User", "user")
+                        .WithMany("Carts")
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("_278Project.Models.Product", "product")
+                        .WithMany("Carts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("product");
+
+                    b.Navigation("user");
+                });
+
+            modelBuilder.Entity("_278Project.Models.WishList", b =>
+                {
+                    b.HasOne("_278Project.Models.User", "user")
+                        .WithMany("WishLists")
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("_278Project.Models.Product", "product")
+                        .WithMany("WishLists")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("product");
+
+                    b.Navigation("user");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -295,6 +401,20 @@ namespace _278Project.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("_278Project.Models.Product", b =>
+                {
+                    b.Navigation("Carts");
+
+                    b.Navigation("WishLists");
+                });
+
+            modelBuilder.Entity("_278Project.Models.User", b =>
+                {
+                    b.Navigation("Carts");
+
+                    b.Navigation("WishLists");
                 });
 #pragma warning restore 612, 618
         }

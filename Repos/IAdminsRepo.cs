@@ -5,6 +5,7 @@ public interface IAdminsRepo
 {
     public void AddProduct(Product product);
     public void RemoveProduct(Product product);
+    IEnumerable<Product> getProducts();
 
     public void updateProductPrice(int productId, int price);
     public void updateProductQuantity(int productId, int quantity);
@@ -12,6 +13,7 @@ public interface IAdminsRepo
     public void updateProductBestSeller(int productId, bool bestSeller);
 
     public void RemoveOrder(int orderId);
+    public Product? GetProductById(int id);
 
 
 }

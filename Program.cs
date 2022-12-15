@@ -15,6 +15,7 @@ builder.Services.AddIdentity<User, IdentityRole>()
 .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IUsersRepo, UsersRepo>();
+builder.Services.AddScoped<IAdminsRepo, AdminsRepo>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,6 +33,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",

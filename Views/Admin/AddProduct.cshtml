@@ -1,0 +1,16 @@
+@model Product
+<environment names="Development">
+    <link rel="stylesheet" href="~/css/Home Page CSS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</environment>
+<form method="post" asp-controller="Admin" asp-action="AddProduct">
+    <input type="text" placeholder="name" asp-for="name" />
+    <input type="text" placeholder="weight" asp-for="weight" />
+    <input type="text" placeholder="price" asp-for="price" />
+    <input type="text" placeholder="category" asp-for="category" />
+    <input type="text" placeholder="Promoted?" asp-for="is_promoted" />
+    <input type="text" placeholder="Best seller?" asp-for="is_best_seller" />
+    <input type="text" placeholder="Image url" asp-for="imgURL" />
+    <input type="text" placeholder="quantity" asp-for="quantity" />
+    <input type="submit" value="Add Product" />
+</form>

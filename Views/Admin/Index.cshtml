@@ -1,0 +1,65 @@
+@model ProductViewModel;
+@{
+    ViewData["Title"] = " | Manage Products";
+}
+<environment names="Development">
+    <link rel="stylesheet" href="~/css/Home Page CSS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</environment>
+<h1 class="mb-2">Manage Products</h1>
+<table class="table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th>Product name</th>
+            <th>Weight</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Products.Count() == 0)
+        {
+            <tr>
+                <td colspan="5">There are no products.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (Product product in Model.Products)
+            {
+                <tr>
+                    <td>@product.name</td>
+                    <td>
+                        @product.weight
+                    </td>
+                    <td>
+                        @product.price
+                    </td>
+                    <td>
+                        @product.quantity
+                    </td>
+                    <td>
+                        <form method="post" asp-controller="Admin" asp-action="Delete" asp-route-id="@product.ProductId">
+                            <button type="submit" class="btn btn-primary">
+                                Delete Product</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" asp-controller="Admin" asp-action="Update" asp-route-id="@product.ProductId">
+                            <button type="submit" class="btn btn-primary">
+                                Update Product</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+<form method="get" asp-controller="Admin" asp-action="AddProduct">
+    <button type="submit" class="btn btn-success">
+        Add new Product</button>
+</form>

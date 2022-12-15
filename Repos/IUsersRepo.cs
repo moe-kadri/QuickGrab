@@ -3,19 +3,22 @@ namespace _278Project.Repos;
 
 public interface IUsersRepo
 {
-    // public void AddtoCart(int userId, int productId);
-    // public void AddtoWishList(int userId, int productId);
-    // // public void updateEmail(int id, string mail);
-    // // public void updatePassword(int id, string pass);
-    // // public void updatePhoneNumber(int id, int phone);
+    public void AddtoCart(Cart cart);
+    public void AddtoWishList(WishList wishlist);
+    public void updateEmail(int id, string mail);
+    public void updatePassword(int id, string pass);
+    public void updatePhoneNumber(int id, string phone);
 
-    // public Cart? getProductFromCart(int userId, int productId);
-    // public void removeItem(int userId, int productId);
+    public Cart? getProductFromCart(string userId, int productId);
+    public void removeItemFromCart(string userId, int productId);
+    public void removeItemFromWishList(string userId, int productId);
 
-    // IEnumerable<Product> getProducts();
+    IEnumerable<Product> getProducts();
 
-    // public int totalInCart(int id);
-    // public int totalInWishList(int id);
+    public int totalInCart(string id);
+    public int totalInWishList(string id);
 
-    // public IEnumerable<Product> search(string name);
+    public IEnumerable<Product> search(string name);
+
+    public WishList? getProductFromWishList(string userId, int productId);
 }

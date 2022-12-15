@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Project\\Web-Dev-Project\\278Project.csproj": {}
+    "C:\\Users\\user\\Desktop\\Quick_Grab\\Web-Dev-Project\\278Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Project\\Web-Dev-Project\\278Project.csproj": {
+    "C:\\Users\\user\\Desktop\\Quick_Grab\\Web-Dev-Project\\278Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Project\\Web-Dev-Project\\278Project.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Quick_Grab\\Web-Dev-Project\\278Project.csproj",
         "projectName": "278Project",
-        "projectPath": "C:\\Users\\user\\Desktop\\Project\\Web-Dev-Project\\278Project.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Quick_Grab\\Web-Dev-Project\\278Project.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Project\\Web-Dev-Project\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Quick_Grab\\Web-Dev-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,7 +47,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

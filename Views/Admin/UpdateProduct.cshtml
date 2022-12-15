@@ -1,0 +1,8 @@
+@model Product
+<form method="post" asp-controller="Admin" asp-action="Update">
+    <input type="text" value="@Model.weight" asp-for="weight" />
+    <input type="text" value="@Model.price" asp-for="price" />
+    <input type="text" value="@Model.is_promoted" asp-for="is_promoted" />
+    <input type="text" value="@Model.is_best_seller" asp-for="is_best_seller" />
+    <input type="submit" value="Update Product" />
+</form>

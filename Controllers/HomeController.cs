@@ -17,43 +17,44 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var products = _usersRepo.getProducts();
+        return View(products);
     }
     public IActionResult AboutUs()
     {
         return View();
     }
-    // public IActionResult BabyCare()
-    // {
-    //     var products = _usersRepo.getProducts();
-    //     return View(products);
-    // }
-    // public IActionResult Beauty()
-    // {
-    //     var products = _usersRepo.getProducts();
-    //     return View(products);
-    // }
+    public IActionResult BabyCare()
+    {
+        var products = _usersRepo.getProducts();
+        return View(products);
+    }
+    public IActionResult Beauty()
+    {
+        var products = _usersRepo.getProducts();
+        return View(products);
+    }
 
-    // public IActionResult Food()
-    // {
-    //     var products = _usersRepo.getProducts();
-    //     return View(products);
-    // }
-    // public IActionResult FruitesAndVeggies()
-    // {
-    //     var products = _usersRepo.getProducts();
-    //     return View(products);
-    // }
-    // public IActionResult Gardening()
-    // {
-    //     var products = _usersRepo.getProducts();
-    //     return View(products);
-    // }
-    // public IActionResult Office()
-    // {
-    //     var products = _usersRepo.getProducts();
-    //     return View(products);
-    // }
+    public IActionResult Food()
+    {
+        var products = _usersRepo.getProducts();
+        return View(products);
+    }
+    public IActionResult FruitesAndVeggies()
+    {
+        var products = _usersRepo.getProducts();
+        return View(products);
+    }
+    public IActionResult Gardening()
+    {
+        var products = _usersRepo.getProducts();
+        return View(products);
+    }
+    public IActionResult Office()
+    {
+        var products = _usersRepo.getProducts();
+        return View(products);
+    }
     public IActionResult NewArrivals()
     {
         return View();

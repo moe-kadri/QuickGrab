@@ -49,6 +49,25 @@ namespace _278Project.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    OrderId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    userName = table.Column<string>(type: "TEXT", nullable: true),
+                    address = table.Column<string>(type: "TEXT", nullable: true),
+                    cardNbr = table.Column<int>(type: "INTEGER", nullable: false),
+                    cardName = table.Column<string>(type: "TEXT", nullable: true),
+                    expiryMonth = table.Column<int>(type: "INTEGER", nullable: false),
+                    expiryYear = table.Column<int>(type: "INTEGER", nullable: false),
+                    cvv = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.OrderId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -56,7 +75,7 @@ namespace _278Project.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     name = table.Column<string>(type: "TEXT", nullable: true),
                     weight = table.Column<string>(type: "TEXT", nullable: true),
-                    price = table.Column<float>(type: "REAL", nullable: false),
+                    price = table.Column<int>(type: "INTEGER", nullable: false),
                     category = table.Column<string>(type: "TEXT", nullable: true),
                     is_promoted = table.Column<bool>(type: "INTEGER", nullable: false),
                     is_best_seller = table.Column<bool>(type: "INTEGER", nullable: false),
@@ -174,6 +193,56 @@ namespace _278Project.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Carts",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false),
+                    quantity = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Carts", x => new { x.Id, x.ProductId });
+                    table.ForeignKey(
+                        name: "FK_Carts_AspNetUsers_Id",
+                        column: x => x.Id,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Carts_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "WishLists",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false),
+                    quantity = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_WishLists", x => new { x.Id, x.ProductId });
+                    table.ForeignKey(
+                        name: "FK_WishLists_AspNetUsers_Id",
+                        column: x => x.Id,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_WishLists_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -210,6 +279,16 @@ namespace _278Project.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Carts_ProductId",
+                table: "Carts",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_WishLists_ProductId",
+                table: "WishLists",
+                column: "ProductId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -230,13 +309,22 @@ namespace _278Project.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "Carts");
+
+            migrationBuilder.DropTable(
+                name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "WishLists");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Products");
         }
     }
 }

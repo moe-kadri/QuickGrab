@@ -1,7 +1,7 @@
-@model LogInViewModel
+@model LoginViewModel
 
 @{
-    ViewBag.Title= "LogIn";
+    ViewBag.Title = "LogIn";
 }
 <!DOCTYPE html>
 
@@ -12,7 +12,7 @@
 <head>
     <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
     <environment>
-        <link type="text/css" rel="stylesheet" href="~/css/Login And Registration CSS.css">
+        <link type="text/css" rel="stylesheet" href="~/css/Login CSS.css">
         <link type="text/css" rel="stylesheet" href="~/css/Home Page CSS.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,14 +47,14 @@
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <form method="post" asp-controller="Account" asp-action="LogIn">
 
-                        <input asp-for="Email" type="text" placeholder="EMAIL" required>
+                        <input asp-for="Email" type="text" placeholder="USERNAME" required>
 
                         <input asp-for="Password" type="password" placeholder="PASSWORD" required>
 
 
                         <button type="submit" class='sign_in_btn'>
 
-                                SIGN IN
+                            SIGN IN
 
                         </button>
 
@@ -80,7 +80,8 @@
 
                     </p>
 
-                    <button asp-controller="Account" asp-action="Register" id="b1" style="cursor: pointer;" class='prompt_sign_up'>
+                    <button asp-controller="Account" asp-action="Register" id="b1" style="cursor: pointer;"
+                        class='prompt_sign_up'>
 
                         SIGN UP
 
@@ -90,6 +91,8 @@
 
             </div>
         </section>
-    <body>
-         <script src="~/js/Login And Registration JS.js"></script>
+
+</body>
+<script src="~/js/Login And Registration JS.js"></script>
+
 </html>
