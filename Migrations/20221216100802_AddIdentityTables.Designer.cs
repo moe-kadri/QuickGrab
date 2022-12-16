@@ -11,7 +11,7 @@ using _278Project.Data;
 namespace _278Project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221214205533_AddIdentityTables")]
+    [Migration("20221216100802_AddIdentityTables")]
     partial class AddIdentityTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

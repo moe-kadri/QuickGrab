@@ -1,4 +1,4 @@
-
+@model User
 <!DOCTYPE html>
 <html leng="en">
 <head>
@@ -23,16 +23,12 @@
             <div class="profile tabShow">
                 <h1>Personal Information</h1>
                 <h2>Name</h2>
-                <input type="text" class="input" value="username" readonly>
+                <input type="text" class="input" value="@Model.UserName" readonly>
                 <h2>Phone</h2>
-                <input type="text" class="input" >
+                <input type="text" value="@Model.PhoneNumber" readonly class="input" >
                 <h2>Email</h2>
-                <input type="email" class="input">
-                <h2>Password</h2>
-                <input type="password" class="input" >
-                <button type="button" class="btn">
-                    <a asp-action="Index" style = 'color: green; text-decoration: none;'>update</a>
-                </button>
+                <input type="email" value="@Model.Email" readonly class="input">
+            
             </div>
            </div>
     </div>

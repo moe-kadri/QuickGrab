@@ -11,7 +11,7 @@ using _278Project.Data;
 namespace _278Project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221214205452_InitialCreate")]
+    [Migration("20221216100724_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

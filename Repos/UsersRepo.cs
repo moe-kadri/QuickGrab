@@ -23,38 +23,7 @@ public class UsersRepo : IUsersRepo
         _context.WishLists.Add(wishlist);
         _context.SaveChanges();
     }
-    public void updateEmail(int id, string mail)
-    {
-        User? user = _context.Users.Find(id);
-        if (user != null)
-        {
-            user.Email = mail;
-            _context.SaveChanges();
-        }
-
-
-
-    }
-    public void updatePassword(int id, string pass)
-    {
-        User? user = _context.Users.Find(id);
-        if (user != null)
-        {
-            user.PasswordHash = pass;
-            _context.SaveChanges();
-        }
-
-    }
-    public void updatePhoneNumber(int id, string phone)
-    {
-        User? user = _context.Users.Find(id);
-        if (user != null)
-        {
-            user.PhoneNumber = phone;
-            _context.SaveChanges();
-        }
-
-    }
+    
     public Cart? getProductFromCart(string userId, int productId)
     {
         IQueryable<Cart> query = _context.Carts;
@@ -103,14 +72,30 @@ public class UsersRepo : IUsersRepo
         return wishlists.Count();
     }
 
-    public IEnumerable<Product> search(string name)
-    {
-        return _context.Products.Where(p => p.name == name).ToList();
-    }
+    // public IEnumerable<Product> search(string name)
+    // {
+    //     return _context.Products.Where(p => p.name == name).ToList();
+    // }
 
-    IEnumerable<Product> IUsersRepo.getProducts()
+     IEnumerable<Product> IUsersRepo.getProducts()
     {
         return _context.Products.OrderBy(p => p.name).ToList();
     }
+    public IEnumerable<Cart> getCarts(){
+        return _context.Carts.OrderBy(c => c.Id).ToList();
+    }
+    public User? getUserByName(string name){
+        return _context.Users.Where(u=>u.UserName==name).FirstOrDefault();
+    }
 
+    public Cart? GetCart(string id, int productId){
+        IQueryable<Cart> query= _context.Carts;
+        query= query.Where(c=>c.Id==id);
+        query=query.Where(c=>c.ProductId==productId);
+        return query.FirstOrDefault();
+    }
+    public Product? GetProductById(int id)
+    {
+        return _context.Products.Find(id);
+    }
 }

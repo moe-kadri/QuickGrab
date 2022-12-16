@@ -1,8 +1,34 @@
 @model Product
-<form method="post" asp-controller="Admin" asp-action="Update">
-    <input type="text" value="@Model.weight" asp-for="weight" />
-    <input type="text" value="@Model.price" asp-for="price" />
-    <input type="text" value="@Model.is_promoted" asp-for="is_promoted" />
-    <input type="text" value="@Model.is_best_seller" asp-for="is_best_seller" />
-    <input type="submit" value="Update Product" />
+<html>
+    <head>
+        <environment names="Development">
+    <link rel="stylesheet" href="~/css/Home Page CSS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</environment>
+
+    </head>
+    <body>
+            
+<form method="post" asp-controller="Admin" asp-action="UpdateProduct">
+    <input type="hidden" placeholder="Id" asp-for="@Model.ProductId" />
+    <label>New Price: <input type="text" value="@Model.price" asp-for="price" class="mb-3"/> </label><br>
+    <label>New Quantity: <input type="text" value="@Model.quantity" asp-for="quantity" class="mb-3"/></label><br>
+    <label>Do you want to put this product on promotion? <input type="text" value="@Model.is_promoted" asp-for="is_promoted" id="PromotionState" class="mb-3"/><br>
+    <label>Do you want to put this product on best sellers list? <input type="text" value="@Model.is_best_seller" asp-for="is_best_seller" id="BestSellerState" class="mb-3"/></label><br>
+    <input type="hidden" placeholder="name" asp-for="name" />
+    <input type="hidden" placeholder="weight" asp-for="weight" />
+    <input type="hidden" placeholder="category" asp-for="category" />
+    <input type="hidden" placeholder="Image url" asp-for="imgURL" />
+    <input type="hidden" placeholder="Id" asp-for="Carts" />
+    <input type="hidden" placeholder="Id" asp-for="WishLists" />
+    <input type="submit" value="Update Product" class="btn btn-success" />
 </form>
+    </body>
+</html>
+
+
+
+
+
+
+

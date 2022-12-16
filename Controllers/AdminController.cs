@@ -38,20 +38,21 @@ public class AdminController : Controller
         return RedirectToAction("Index");
     }
     [HttpGet]
-    public IActionResult Update(Product product)
+    public IActionResult UpdateProduct(int id)
     {
-        return View(product);
+        var item = _adminsRepo.GetProductById(id);
+        return View(item);
     }
     [HttpPost]
-    public IActionResult Update(int id)
+    public IActionResult UpdateProduct(Product product)
     {
-        var ProductToUpdate = _adminsRepo.GetProductById(id);
+        var ProductToUpdate = _adminsRepo.GetProductById(product.ProductId);
         if (ProductToUpdate != null)
         {
-            _adminsRepo.updateProductBestSeller(ProductToUpdate.ProductId, ProductToUpdate.is_best_seller);
-            _adminsRepo.updateProductPromotion(ProductToUpdate.ProductId, ProductToUpdate.is_promoted);
-            _adminsRepo.updateProductPrice(ProductToUpdate.ProductId, ProductToUpdate.price);
-            _adminsRepo.updateProductQuantity(ProductToUpdate.ProductId, ProductToUpdate.quantity);
+            _adminsRepo.updateProductBestSeller(ProductToUpdate.ProductId, product.is_best_seller);
+            _adminsRepo.updateProductPromotion(ProductToUpdate.ProductId, product.is_promoted);
+            _adminsRepo.updateProductPrice(ProductToUpdate.ProductId, product.price);
+            _adminsRepo.updateProductQuantity(ProductToUpdate.ProductId, product.quantity);
         }
         return RedirectToAction("Index");
     }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using _278Project.Models;
 using _278Project.Repos;
+using Microsoft.AspNetCore.Identity;
 
 namespace _278Project.Controllers;
 
@@ -15,10 +16,13 @@ public class HomeController : Controller
         _usersRepo = usersRepo;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(Cart cart)
     {
-        var products = _usersRepo.getProducts();
-        return View(products);
+        var products = _usersRepo.getProducts().ToList();
+        var search= new Search{};
+
+        Tuple<List<Product>, Search, Cart> disp= new Tuple<List<Product>, Search, Cart>(products, search, cart);
+        return View(disp);
     }
     public IActionResult AboutUs()
     {
@@ -72,11 +76,27 @@ public class HomeController : Controller
     {
         return View();
     }
+    [HttpGet]
     public IActionResult ShoppingCart()
     {
-        return View();
+        var carts= _usersRepo.getCarts();
+        return View(carts);
     }
-
+    [HttpPost]
+    public IActionResult ShoppingCart(int productId){
+        string name= User.Identity.Name;
+        if(name==null) return View("Error");
+        var c= new Cart{};
+        c.Id= name;
+       
+        c.ProductId= 1;
+        c.quantity=1;
+        
+       
+        if(c!=null) _usersRepo.AddtoCart(c);
+        return NoContent();
+        
+    }
     public IActionResult Payment()
     {
         return View();
@@ -88,9 +108,16 @@ public class HomeController : Controller
     }
 
     public IActionResult Profile()
-    {
-        return View();
+    {   var user= _usersRepo.getUserByName(User.Identity.Name);
+        return View(user);
     }
+    [HttpGet]
+    public IActionResult UpdateProduct(string id)
+    {
+        var item = _usersRepo.getUserByName(id);
+        return View(item);
+    }
+  
 
     public IActionResult WishList()
     {
@@ -106,7 +133,16 @@ public class HomeController : Controller
     {
         return Redirect(Url.Action("Index", "Home") + "#category");
     }
-
+    [HttpPost]
+    public IActionResult Search(Search search) {
+        // string? name= search.name;
+        // var disp = _usersRepo.search(name);
+            var products= _usersRepo.getProducts().ToList();
+            Tuple<List<Product>, Search> disp= new Tuple<List<Product>, Search>(products, search);
+        return View(disp);
+        
+        
+    }
     public IActionResult Promotions()
     {
         return Redirect(Url.Action("Index", "Home") + "#BestPromotions");

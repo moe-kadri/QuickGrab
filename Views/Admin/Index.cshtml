@@ -41,14 +41,16 @@
                         @product.quantity
                     </td>
                     <td>
-                        <form method="post" asp-controller="Admin" asp-action="Delete" asp-route-id="@product.ProductId">
-                            <button type="submit" class="btn btn-primary">
+                        <form method="post" asp-controller="Admin" asp-action="Delete">
+                            <input type="hidden" placeholder="Id" asp-for="@product.ProductId" />
+                            <button type="submit" class="btn btn-success">
                                 Delete Product</button>
                         </form>
                     </td>
                     <td>
-                        <form method="post" asp-controller="Admin" asp-action="Update" asp-route-id="@product.ProductId">
-                            <button type="submit" class="btn btn-primary">
+                        <form method="get" asp-controller="Admin" asp-action="UpdateProduct" asp-route-id="@product.ProductId">
+                            <input type="hidden" placeholder="Id" asp-for="@product.ProductId" />
+                            <button type="submit" class="btn btn-success">
                                 Update Product</button>
                         </form>
                     </td>

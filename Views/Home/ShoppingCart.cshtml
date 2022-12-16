@@ -1,3 +1,4 @@
+@model List<Cart>
 <!DOCTYPE html>
 
 <html>
@@ -27,34 +28,29 @@
             <div class="cart">
 
                 <div class="products">
+                    @foreach(var cart in Model){
+                        <div class="product">
 
-                    <div class="product">
-
-                        <img src="~/images/picon.jpg">
+                        <img src="@cart.product.imgURL">
 
                         <div class="product-info">
 
                             <h3 class="product-name">
                                 
-                                Picon Cheese
+                                @cart.product.name
                             
                             </h3>
 
                             <h4 class="product-price">
                                 
-                                LBP 28,500
+                                LBP @cart.product.price
                             
                             </h4>
 
-                            <h4 class="product-offer">
-                                
-                                50%
-                            
-                            </h4>
 
                             <p class="product-quantity">
                                 
-                                Qnt: 
+                                Qnt: @cart.product.quantity
                                 
                                 <input value="1" name="">
                             
@@ -75,8 +71,10 @@
                         </div>
 
                     </div>
+                    }
+                    
 
-                    <div class="product">
+                    @* <div class="product">
 
                         <img src="~/images/images/pack2.jpg">
 
@@ -180,7 +178,7 @@
                     
                     </a>
 
-                </div>
+                </div> *@
 
             </div>
 
