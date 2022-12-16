@@ -19,9 +19,9 @@ public class HomeController : Controller
     public IActionResult Index(Cart cart)
     {
         var products = _usersRepo.getProducts().ToList();
-        var search= new Search{};
+        var search = new Search { };
 
-        Tuple<List<Product>, Search, Cart> disp= new Tuple<List<Product>, Search, Cart>(products, search, cart);
+        Tuple<List<Product>, Search, Cart> disp = new Tuple<List<Product>, Search, Cart>(products, search, cart);
         return View(disp);
     }
     public IActionResult AboutUs()
@@ -77,25 +77,32 @@ public class HomeController : Controller
         return View();
     }
     [HttpGet]
-    public IActionResult ShoppingCart()
+    public IActionResult ViewCart()
     {
-        var carts= _usersRepo.getCarts();
+        var carts = _usersRepo.getCarts();
         return View(carts);
     }
+    [HttpGet]
+    public IActionResult ShoppingCart(int id)
+    {
+
+        var item = _usersRepo.GetProductById(id);
+        if (id == 0) return View("Error");
+        return View(item);
+    }
     [HttpPost]
-    public IActionResult ShoppingCart(int productId){
-        string name= User.Identity.Name;
-        if(name==null) return View("Error");
-        var c= new Cart{};
-        c.Id= name;
-       
-        c.ProductId= 1;
-        c.quantity=1;
-        
-       
-        if(c!=null) _usersRepo.AddtoCart(c);
-        return NoContent();
-        
+    public IActionResult ShoppingCart(Cart cart)
+    {
+        var CartToAdd = new Cart { };
+        CartToAdd.UserName = User.Identity.Name;
+        CartToAdd.ProductId = 1;
+        //cart.ProductId;
+        if (CartToAdd != null)
+        {
+            _usersRepo.AddtoCart(CartToAdd);
+        }
+        return RedirectToAction("Index");
+
     }
     public IActionResult Payment()
     {
@@ -108,7 +115,8 @@ public class HomeController : Controller
     }
 
     public IActionResult Profile()
-    {   var user= _usersRepo.getUserByName(User.Identity.Name);
+    {
+        var user = _usersRepo.getUserByName(User.Identity.Name);
         return View(user);
     }
     [HttpGet]
@@ -117,7 +125,7 @@ public class HomeController : Controller
         var item = _usersRepo.getUserByName(id);
         return View(item);
     }
-  
+
 
     public IActionResult WishList()
     {
@@ -134,14 +142,15 @@ public class HomeController : Controller
         return Redirect(Url.Action("Index", "Home") + "#category");
     }
     [HttpPost]
-    public IActionResult Search(Search search) {
+    public IActionResult Search(Search search)
+    {
         // string? name= search.name;
         // var disp = _usersRepo.search(name);
-            var products= _usersRepo.getProducts().ToList();
-            Tuple<List<Product>, Search> disp= new Tuple<List<Product>, Search>(products, search);
+        var products = _usersRepo.getProducts().ToList();
+        Tuple<List<Product>, Search> disp = new Tuple<List<Product>, Search>(products, search);
         return View(disp);
-        
-        
+
+
     }
     public IActionResult Promotions()
     {

@@ -19,7 +19,7 @@ namespace _278Project.Migrations
 
             modelBuilder.Entity("_278Project.Models.Cart", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("UserName")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("ProductId")
@@ -28,7 +28,7 @@ namespace _278Project.Migrations
                     b.Property<int>("quantity")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("Id", "ProductId");
+                    b.HasKey("UserName", "ProductId");
 
                     b.HasIndex("ProductId");
 
@@ -314,15 +314,15 @@ namespace _278Project.Migrations
 
             modelBuilder.Entity("_278Project.Models.Cart", b =>
                 {
-                    b.HasOne("_278Project.Models.User", "user")
-                        .WithMany("Carts")
-                        .HasForeignKey("Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("_278Project.Models.Product", "product")
                         .WithMany("Carts")
                         .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("_278Project.Models.User", "user")
+                        .WithMany("Carts")
+                        .HasForeignKey("UserName")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

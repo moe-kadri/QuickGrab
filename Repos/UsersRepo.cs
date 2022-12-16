@@ -23,12 +23,12 @@ public class UsersRepo : IUsersRepo
         _context.WishLists.Add(wishlist);
         _context.SaveChanges();
     }
-    
+
     public Cart? getProductFromCart(string userId, int productId)
     {
         IQueryable<Cart> query = _context.Carts;
         query = query.Where(c => c.ProductId == productId);
-        query = query.Where(c => c.Id == userId);
+        query = query.Where(c => c.UserName == userId);
         return query.FirstOrDefault();
 
     }
@@ -63,7 +63,7 @@ public class UsersRepo : IUsersRepo
 
     public int totalInCart(string id)
     {
-        var carts = _context.Carts.Where(c => c.Id == id).ToList();
+        var carts = _context.Carts.Where(c => c.UserName == id).ToList();
         return carts.Count();
     }
     public int totalInWishList(string id)
@@ -77,25 +77,28 @@ public class UsersRepo : IUsersRepo
     //     return _context.Products.Where(p => p.name == name).ToList();
     // }
 
-     IEnumerable<Product> IUsersRepo.getProducts()
+    IEnumerable<Product> IUsersRepo.getProducts()
     {
         return _context.Products.OrderBy(p => p.name).ToList();
     }
-    public IEnumerable<Cart> getCarts(){
-        return _context.Carts.OrderBy(c => c.Id).ToList();
+    public IEnumerable<Cart> getCarts()
+    {
+        return _context.Carts.OrderBy(c => c.UserName).ToList();
     }
-    public User? getUserByName(string name){
-        return _context.Users.Where(u=>u.UserName==name).FirstOrDefault();
+    public User? getUserByName(string name)
+    {
+        return _context.Users.Where(u => u.UserName == name).FirstOrDefault();
     }
 
-    public Cart? GetCart(string id, int productId){
-        IQueryable<Cart> query= _context.Carts;
-        query= query.Where(c=>c.Id==id);
-        query=query.Where(c=>c.ProductId==productId);
+    public Cart? GetCart(string id, int productId)
+    {
+        IQueryable<Cart> query = _context.Carts;
+        query = query.Where(c => c.UserName == id);
+        query = query.Where(c => c.ProductId == productId);
         return query.FirstOrDefault();
     }
     public Product? GetProductById(int id)
     {
-        return _context.Products.Find(id);
+        return _context.Products.Where(p => p.ProductId == id).FirstOrDefault();
     }
 }

@@ -197,16 +197,16 @@ namespace _278Project.Migrations
                 name: "Carts",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    UserName = table.Column<string>(type: "TEXT", nullable: false),
                     ProductId = table.Column<int>(type: "INTEGER", nullable: false),
                     quantity = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Carts", x => new { x.Id, x.ProductId });
+                    table.PrimaryKey("PK_Carts", x => new { x.UserName, x.ProductId });
                     table.ForeignKey(
-                        name: "FK_Carts_AspNetUsers_Id",
-                        column: x => x.Id,
+                        name: "FK_Carts_AspNetUsers_UserName",
+                        column: x => x.UserName,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);

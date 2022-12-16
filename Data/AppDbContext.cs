@@ -20,7 +20,7 @@ public class AppDbContext : IdentityDbContext<User>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Cart>().HasKey(c => new { c.Id, c.ProductId });
+        modelBuilder.Entity<Cart>().HasKey(c => new { c.UserName, c.ProductId });
 
         modelBuilder.Entity<Cart>()
         .HasOne(ba => ba.product)
@@ -30,7 +30,7 @@ public class AppDbContext : IdentityDbContext<User>
         modelBuilder.Entity<Cart>()
         .HasOne(ba => ba.user)
         .WithMany(a => a.Carts)
-        .HasForeignKey(ba => ba.Id);
+        .HasForeignKey(ba => ba.UserName);
 
 
 
