@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using _278Project.Models;
 using _278Project.Repos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 
 namespace _278Project.Controllers;
@@ -77,12 +78,14 @@ public class HomeController : Controller
         return View();
     }
     [HttpGet]
+    [Authorize]
     public IActionResult ViewCart()
     {
         var carts = _usersRepo.getCarts();
         return View(carts);
     }
     [HttpGet]
+    [Authorize]
     public IActionResult ShoppingCart(int id)
     {
 
@@ -91,6 +94,7 @@ public class HomeController : Controller
         return View(item);
     }
     [HttpPost]
+    [Authorize]
     public IActionResult ShoppingCart(Cart cart)
     {
         var CartToAdd = new Cart { };
@@ -104,6 +108,7 @@ public class HomeController : Controller
         return RedirectToAction("Index");
 
     }
+    [Authorize]
     public IActionResult Payment()
     {
         return View();
@@ -113,7 +118,7 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    [Authorize]
     public IActionResult Profile()
     {
         var user = _usersRepo.getUserByName(User.Identity.Name);
@@ -126,12 +131,12 @@ public class HomeController : Controller
         return View(item);
     }
 
-
+    [Authorize]
     public IActionResult WishList()
     {
         return View();
     }
-
+    [Authorize]
     public IActionResult DetailsForCheckout()
     {
         return View();

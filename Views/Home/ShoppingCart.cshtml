@@ -1,5 +1,11 @@
 @using Microsoft.AspNetCore.Identity;
 @model Product
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/css/ProductPage.css" />
+    <link rel="stylesheet" href="~/css/Home Page CSS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</environment>
 <div class="product-box">
     <img alt="Cetirizine" src="@Model.imgURL">
     <strong>@Model.name</strong>
